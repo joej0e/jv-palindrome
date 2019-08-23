@@ -6,10 +6,6 @@ public class Palindrome {
         StringBuilder stringBuilder = new StringBuilder(text);
         stringBuilder.reverse();
         String string = new String(stringBuilder);
-        if (text.equals(string)) {
-            return true;
-        } else {
-            return false;
-        }
+        return text.equals(string);
     }
 }
